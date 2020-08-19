@@ -26,6 +26,9 @@ nav {
 
 .item-link {
   list-style: none;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .item-link a {
@@ -44,6 +47,43 @@ nav {
   background-color: #fefae0;
   margin: 2em 0;
   padding: 5em 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small-box {
+  background-color: #fefae0;
+  margin: 2em 0;
+  padding: 1em 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.create-book {
+  margin-top: 3em;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2px auto;
+  width: 80%;
+}
+
+.input-control {
+  padding: 1em;
+  margin: 0.5em 0;
+}
+
+.btn-submit {
+  background: #00b4d8;
+  cursor: pointer;
+  margin: 1em 0;
+  border: none;
+  border-radius: 3px;
+  padding: 1em;
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

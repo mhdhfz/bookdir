@@ -1,4 +1,5 @@
 const express = require("express");
+const bookRoutes = require("./routers/bookRoutes");
 const app = express();
 const PORT = 2020;
 
@@ -12,6 +13,8 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render("index", { title: "Home" });
 });
+
+app.use("/books", bookRoutes);
 
 app.listen(PORT, () => {
   console.log(`server up and running on port: ${PORT}`);
