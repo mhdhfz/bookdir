@@ -2,8 +2,15 @@ const express = require("express");
 const app = express();
 const PORT = 2020;
 
+// register view engine
+app.set("view engine", "ejs");
+
+//  static folder
+app.use(express.static("public"));
+
+// route to homepage
 app.get("/", (req, res) => {
-  res.send("successfully setup basic server for bookdir");
+  res.render("index", { title: "Home" });
 });
 
 app.listen(PORT, () => {
