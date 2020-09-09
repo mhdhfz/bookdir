@@ -1,0 +1,17 @@
+----------------------
+planning for books app
+----------------------
+
+1. create web server.
+2. setup model / controller / view / route.
+   - model : bookModel
+   - controller : bookController
+   - view : books folder
+   - routes : bookRoutes.
+     - GET all books : /books
+     - GET single book : /books/title
+     - POST add book : /books
+     - GET to create new book : books/create
+     - GET to update single book : /books/id/edit
+     - UPDATE single book : /books/id
+     - DELETE single book : /books/id/delete

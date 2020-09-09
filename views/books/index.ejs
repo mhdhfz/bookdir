@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/nav') %>
+    <div class="main-container">
+      <div class="small-box">
+        <h1>All Books</h1>
+      </div>
+      <div>
+        <!-- prettier-ignore -->
+        <% if (books.length > 0) { %>
+            <% books.forEach(book => { %>
+        <a class="list-books" href="/books/details/<%= book._id %>">
+          <h3><%= book.title %></h3>
+          <span><%= book.author %></span>
+        </a>
+        <% }) %> <% } else { %>
+        <p>there no book to display.</p>
+        <% } %>
+      </div>
+    </div>
+    <%- include('../partials/footer') %>
+  </body>
+</html>

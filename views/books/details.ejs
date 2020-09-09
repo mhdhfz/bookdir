@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/nav') %>
+    <div class="main-container">
+      <div class="small-box">
+        <h1>Book Details</h1>
+      </div>
+      <div>
+        <!-- prettier-ignore -->
+        <h3><%= book.title %></h3>
+        <small><%= book.author %></small>
+        <p><%= book.description %></p>
+        <button class="btn-delete">Delete</button>
+        <button class="btn-edit">Edit</button>
+      </div>
+    </div>
+    <%- include('../partials/footer') %>
+  </body>
+</html>

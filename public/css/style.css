@@ -45,6 +45,7 @@ nav {
 
 .box {
   background-color: #fefae0;
+  color: #302f2f;
   margin: 2em 0;
   padding: 5em 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -52,6 +53,7 @@ nav {
 
 .small-box {
   background-color: #fefae0;
+  color: #302f2f;
   margin: 2em 0;
   padding: 1em 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -69,9 +71,19 @@ nav {
   width: 80%;
 }
 
+.create-form textarea {
+  resize: none;
+}
+
 .input-control {
   padding: 1em;
   margin: 0.5em 0;
+  outline: none;
+}
+
+.input-control:focus {
+  border: 2px solid #00b4d8;
+  border-radius: 2px;
 }
 
 .btn-submit {
@@ -81,6 +93,72 @@ nav {
   border: none;
   border-radius: 3px;
   padding: 1em;
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-books {
+  background: #7000d8;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em 0;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 1em;
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-books {
+  display: block;
+  border: 1px solid lightgray;
+  margin: 10px 0;
+  padding: 2em;
+  background-color: #f3f3f3;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #302f2f;
+  transition: transform 1s;
+}
+
+.list-books h3 {
+  margin-bottom: 5px;
+}
+
+.list-books:hover {
+  background-color: #d4d1d1;
+  transform: scale(1.1, 1.1);
+}
+
+.btn-delete {
+  background: #d80041;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em 0;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0.5em;
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-edit {
+  background: #d8c200;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em 0;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0.5em;
   color: #fff;
   font-size: medium;
   font-weight: bold;
